@@ -1,0 +1,57 @@
+version: '3.8'
+
+networks:
+  dev:
+    driver: bridge
+  
+services:
+      
+  redis:
+    image: "redis:latest"
+    container_name: redis
+    networks:
+      - dev
+    ports:
+      - "6379:6379"
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: dev-server
+    container_name: dev_server1
+    tty: true
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    networks:
+      - dev
+
+  server2:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: dev-server2
+    container_name: dev_server2
+    tty: true
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    networks:
+      - dev
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - dev

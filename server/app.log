@@ -1,0 +1,17 @@
+2024-06-03 06:28:24,612 - api.main - ERROR - Error occurred: Error -2 connecting to redis:6379. Name or service not known.
+2024-06-03 06:29:24,407 - api.main - INFO - City: dublin, Count: 1
+2024-06-03 06:29:34,662 - api.main - INFO - City: dublin, Count: 2
+2024-06-04 03:32:01,687 - api.main - INFO - City: dublin, Count: 3
+2024-06-04 03:32:06,539 - api.main - INFO - City: dublin, Count: 4
+2024-06-04 03:32:09,788 - api.main - INFO - City: dublin, Count: 5
+2024-06-04 03:34:44,433 - api.main - INFO - City: dublin, Count: 6
+2024-06-04 03:34:46,172 - api.main - INFO - City: dublin, Count: 7
+2024-06-04 03:34:47,255 - api.main - INFO - City: dublin, Count: 8
+2024-06-04 04:05:36,040 - api.main - INFO - City: dublin, Count: 9
+2024-06-04 04:05:51,055 - api.main - INFO - City: dublin, Count: 10
+2024-06-04 04:11:08,200 - api.main - INFO - City: dublin, Count: 1
+2024-06-04 04:53:00,521 - api.main - INFO - City: dublin, Count: 1
+2024-06-04 05:27:41,995 - api.main - INFO - City: dublin, Count: 1
+2024-06-04 05:27:55,918 - api.main - INFO - City: dublin, Count: 2
+2024-06-04 05:28:13,482 - api.main - INFO - City: dublin, Count: 3
+2024-06-04 05:33:43,666 - api.main - INFO - City: dublin, Count: 4
