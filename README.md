@@ -1,10 +1,6 @@
 # Platform Engineering Interview
 
-A colleague has developed an API using python.
-
-Fork this repository ahead of the interview, you will be asked to add some functionality and make some modifications as part of a pair programming session. 
-
-In advanced you should have a local environment setup with these pre-requisites.
+This Weather API has been built using python with a dependency management and packaging solution called poetry. Platform Engineering side added nginx as proxy.
 
 ## Pre-requisites
 * Docker installed
@@ -15,3 +11,14 @@ In advanced you should have a local environment setup with these pre-requisites.
 ## API
 This has been built using python with a dependency management and packaging solution called poetry. You can use poetry if you wish.
 
+## How to run
+- Open in VSCODE and run the following in the terminal
+```
+cd server
+poetry install
+cd ..
+docker-compose down
+docker-compose build
+docker-compose up
+docker-compose logs
+```
